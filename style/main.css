@@ -33,14 +33,91 @@ body {
     font-size: 18px;
     color: #2B3541;
     text-decoration: none;
+    cursor:pointer;
+}
+.header-nav a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: transparent;
+    display: block;  
+}
+.header-nav a:hover {
+    color: #181F27;
+}
+.header-nav a:hover::after {
+    background: #2B3541;
 }
 .social {
     display: flex;
     gap: 30px;
     margin-left: 691px;
 }
-.social button {
+.social img {
     width:30px;
     height: 30px;
     padding: 0;
+    cursor: pointer;
+}
+.social img:hover {
+    width:38px;
+    height:38px;
+}
+.wrapper {
+    max-width: 1205px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    color: #2B3541;
+    flex: 0 0 676px;
+    padding-top: 116px;
+    padding-left: 34px;
+    width: 676px;
+    padding-right: 0;
+    margin: 0;
+}
+.content-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 125%;
+    margin-top: 100px;
+    margin-bottom: 41px;
+    padding-right: 0;
+}
+   .content-text {
+    font-size: 40px;
+    line-height: 125%;
+    margin-bottom: 21px;   
+    font-weight: 400;
+}
+.content-text-two {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 37px;
+    max-width: 297px;
+    padding-left: 89px;
+}
+.content-link {
+    background-color: #FBF138;
+    text-decoration: none;
+    padding: 20px 33px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 90px;
+    cursor: pointer;
+}
+.content-link:hover {
+    background-color: #2B3541;
+    color: #FBF138;
+} 
+.main img {
+    width: 996px;
+    position: absolute;
+    right: 208px;
+    top: 110px;
 }
