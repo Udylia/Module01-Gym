@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 .container {
     max-width: 1141px;
@@ -9,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 37px;
     padding-bottom: 27px;
 }
 .header-logo {
@@ -78,12 +79,13 @@ body {
 .content-title {
     font-size: 48px;
     font-weight: 700;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     line-height: 125%;
     margin-top: 100px;
     margin-bottom: 41px;
-    max-width: 676px;
     z-index: 2;
+    max-width: 676px;
 }
 .content-text {
     font-size: 40px;
@@ -120,7 +122,7 @@ body {
     width: 996px;
     position: absolute;
     right: 208px;
-    top: 110px;
+    top: 109px;
 }
 .button-down {
     display: block;
@@ -138,7 +140,7 @@ body {
     gap: 20px;
 }  
 .event {
-    margin-left: 379px;
+    margin-left: 389px;
     margin-top: 401px;
     color: #2B3541;
 }
@@ -150,11 +152,12 @@ h3 {
 .event-flex-cover {
     position: relative;
     cursor: pointer;    
+    height: 600px;
+    width: 367px;
 }
 .event-flex-cover::after {
     content: ''; 
-    background: linear-gradient(180deg, #FBF138 0%, #FDF9B600 100%);
-    opacity: 0.3; 
+    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
     display: block;
     position: absolute;
     width: 100%;
@@ -177,7 +180,7 @@ h3 {
     opacity: 0;
 }
 .event-flex-cover:hover::after {
-    opacity: 0.6;
+    background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
 }
 .event-flex-cover:hover .event-flex-active {
     z-index: 1;
@@ -190,8 +193,8 @@ h3 {
     line-height: 150%;
     opacity: 0.6;
     position: absolute;
-    bottom: 529px;
-    left: 34px;
+    bottom: 525px;
+    left: 31px;
     z-index: 1;
 }
 .event-flex-title {
@@ -200,30 +203,29 @@ h3 {
     line-height: 125%;
     max-width: 260px;
     position: absolute;
-    bottom: 429px;
-    left: 34px;
+    bottom: 425px;
+    left: 31px;
     z-index: 1;
 }
 .event-flex-link {
     font-size: 18px;
     line-height: 150%;
-    font-weight: 700;
+    font-weight: 400;
     text-decoration: none;
     color: #2B3541;
     background-color: #FBF138;
-    padding: 11px 17px;
+    padding: 10px 20px;
     position: absolute;
-    right: 1px;
-    bottom: 3px;
-    opacity: 1;
+    right: 0;
+    bottom: 0;
 }
 .event-flex-cover:hover .event-flex-link {
     opacity: 0;
 }
 .schedule {
     max-width: 1143px;
-    margin-left: 379px;
-    margin-top: 116px;
+    margin-left: 390px;
+    margin-top: 121px;
 }
 .schedule-title {
     display: flex;
@@ -248,11 +250,15 @@ h3 {
     position: relative;
     cursor: pointer;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 .schedule-grid .schedule-grid-item:nth-child(2) {
     grid-row: 2/5;
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
     opacity: 0.7;
+    border: none;
 }
 .schedule-grid .schedule-grid-item:nth-child(3) {
     grid-row: 1/4;
@@ -263,27 +269,16 @@ h3 {
 .schedule-grid .schedule-grid-item:nth-child(6) {
     grid-row: 3/5;
 }
-.schedule-box {
-    position: absolute;
-    bottom: -98px;
-}
-.schedule-grid-item:nth-child(2) .schedule-box {
-    position: absolute;
-    bottom: 4px;
-}
-.schedule-grid-item:hover .schedule-box {
-    position: absolute;
-    bottom: 20px;
-    transition: 1s;
-}
-.schedule-grid-item:nth-child(1):hover .schedule-box {
-    position: absolute;
-    bottom: -5px;   
-}
 .schedule-grid-item img {
+    display: block;
+    width: 65px;
+    height: 65px;
     margin-bottom: 20px;
 }
 .schedule-grid-date {
+    position: absolute;
+    top: 0;
+    right: 30px;
     color: #010101;
     font-size: 18px;
     font-weight: 400;
@@ -291,9 +286,33 @@ h3 {
     text-align: right;
 }
 .schedule-grid-title {
+    margin-bottom: -14px;
     font-size: 18px;
     font-weight: 700;
+}
+.schedule-grid-item:nth-child(2) .schedule-grid-title{
+    margin-bottom: 8px;
+}
+.schedule-grid-item:nth-child(2) img {
+    width: 67px;
+    height: 107px;
     margin-bottom: 20px;
+}
+.schedule-grid-item:nth-child(3) img {
+    width: 42px;
+    height: 85px;
+}
+.schedule-grid-item:nth-child(4) img {
+    width: 65px;
+    height: 61px;
+}
+.schedule-grid-item:nth-child(5) img {
+    width: 91px;
+    height: 50px;
+}
+.schedule-grid-item:nth-child(6) img {
+    width: 58px;
+    height: 66px;
 }
 .schedule-grid-text {
     font-size: 18px;
@@ -301,48 +320,162 @@ h3 {
     line-height: 150%;
     color: #2B3541;
     max-width: 306px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+.schedule-grid-item:nth-child(2) .schedule-grid-text {
+    overflow: visible;
+    max-height: 81px;
+}
+.schedule-grid-item:hover .schedule-grid-text {
+    max-height: 98px;
 }
 .mailing-container {
     margin-top: 157px;
     background-color: #F3F3F3;
-    padding: 20px 0;
-    margin-left: 0;
+    height: 348px;
     width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.mailing-box {
+    margin: 0 auto;
+    max-width: 600px;
 }
 .mailing-title {
     font-size: 40px;
     font-weight: 700;
     color: #2B3541;
     text-align: center;
-    padding-top: 22px;
-    margin-bottom: 40px;
+    padding-top: 80px;
+    margin-bottom: 41px;   
+}
+.mailing-title::before {
+    position: absolute;
+    content: '';
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    border-radius: 100%;
+    z-index: -1;
+    width: 53px;
+    height: 53px;
+    top: 62px;
+    left: 632px;
 }
 .mailing-form {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
-    margin-bottom: 97px;
-    max-width: 617px;
-    text-align: center;
+    margin-bottom: 10px;
 }
-input {
-    padding: 20px 100px;
+.mailing-form input {
+    padding: 21px 132px;
     font-size: 18px;
     font-weight: 400;
     color: #2B3541;
     border: none;
     opacity: 0.3;
     text-align: start;
-    padding-left: 10px;
+    padding-left: 20px;
+    letter-spacing: 1.2px;
+    cursor: pointer;
 }
-.mailing-link {
+.mailing-form input:hover {
+    background-color: #F3F3F3;
+}
+.mailing-form input:active {
+    border: none;
+    background-color: #fff;
+}
+.mailing-form p {
+    display: none;
+}
+.mailing-form input:invalid {
+    border: 1px solid #AE0303;
+}
+.mailing-form input:invalid p{
+    display: block;
+    color: #AE0303;
+}
+.mailing-form button {
     background-color: #FBF138;
     color: #2B3541;
     font-size: 16px;
     font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 20px 43px;
+    border: none; 
+    text-transform: uppercase;  
+    padding: 23px 45px;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
+}
+.mailing-form button:hover {
+    background-color: #2B3541;
+    color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
+}
+.checkbox:checked,
+.checkbox:not(:checked){
+   position: absolute;
+   left:-9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+   position: relative;
+   padding-left: 24px;
+   cursor:pointer;
+   font-size: 11px;
+}
+.checkbox:checked + label::before{
+   content:'';
+   position: absolute;
+   width: 18px;
+   height: 18px;
+   left:0;
+   top:calc(50% - 10px);
+   background-image: url("../images/rectangle.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.checkbox:checked + label::after{
+   content:'';
+   position: absolute;
+   width: 18px;
+   height: 18px;
+   left: 0;
+   top:calc(50% - 10px);
+   transition: all .2s ease;
+   background-image: url("../images/checkbox.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.checkbox:not(:checked) + label::before{
+    content:'';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left:0;
+    top:calc(50% - 10px);
+    background-image: url("../images/rectangle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+.radio:checked + label::before{
+   border-radius: 100%;
+}
+.agreement-text {
+    color: #2B3541;
+    opacity: .5;
+}
+.agreement-text a {
+    color: #2B3541;
+    opacity: .5;
+}
+.agreement-text a:hover {
+    color: #2B3541;
+    opacity: 1;
 }
 
+ 
