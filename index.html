@@ -19,16 +19,16 @@
                     <a href="#" class="header-logo"></a>
                     <nav>
                         <ul class="header-nav">
-                            <li><a href="#">Мероприятия</a></li>
-                            <li><a href="#">Расписание</a></li>
-                            <li><a href="#">О компании</a></li>
+                            <li><a href="#event">Мероприятия</a></li>
+                            <li><a href="#scheduleDown">Расписание</a></li>
+                            <li><a href="#aboutCompany">О компании</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="social">
-                    <img src="images/IN.svg" alt="Инстаграм">
-                    <img src="images/FB.svg" alt="Фейсбук">
-                </div>   
+                    <a class="social-inst" href="#"></a>
+                    <a class="social-fb" href="#"></a>
+                </div>  
             </div>
         </div>
     </header>
@@ -36,7 +36,7 @@
         <div class="wrapper">
             <div class="content">
                 <h1 class="content-title">Онлайн тренировки любой сложности</h1>
-                <h2 class="content-text">> 15 <span>тренировок</span></h2>
+                <h2 class="content-text"> &gt;15 <span>тренировок</span></h2>
                 <p class="content-text-two">в области спортивной физиологии и нутрициологии</p>
                 <a class="content-link" href="#">узнать подробнее</a>
             </div>   
@@ -45,7 +45,7 @@
             </div>
         </div>
         <a href="#scheduleDown" class="button-down" id="btnDown"></a>
-        <section class="event">
+        <section class="event" id="event">
             <h3>Ближайшие события</h3>
             <div class="event-flex">
                 <div class="event-flex-item">
@@ -137,12 +137,12 @@
                 </div>   
             </div>
         </section>
-        <section class="aboutcompany">
+        <section class="aboutcompany" id="aboutCompany">
             <div class="company-cover">
                 <div class="company-content">
                     <h3 class="company-title">О компании</h3>
                     <p class="company-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь<br> с нами и вы сами увидите, что мы проводим<br> не только онлайн-тренировки.</p>
-                    <button type="submit">Записаться</button>
+                    <button type="button" onclick="openModal()">Записаться</button>
                 </div>
                 <div class="company-visual">
                     <div class="company-visual-bg"></div>
@@ -172,20 +172,22 @@
     <footer>
         <div class="footer-container">
             <div class="footer">
-                <a href="#" class="footer-logo"></a>
-                <nav>
-                    <ul class="footer-nav">
-                        <li><a href="#">Мероприятия</a></li>
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="#">О компании</a></li>
-                    </ul>
-                </nav>
+                <div class="footer-menu">
+                    <a href="#" class="footer-logo"></a>
+                    <nav>
+                        <ul class="footer-nav">
+                            <li><a href="#event">Мероприятия</a></li>
+                            <li><a href="#scheduleDown">Расписание</a></li>
+                            <li><a href="#aboutCompany">О компании</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="footer-mail">
-                    <a href="#">info@freefit.com</a>
+                    <a href="mailto:info@freefit.com">info@freefit.com</a>
                 </div>
                 <div class="footer-social">
-                    <img src="images/IN.svg" alt="Инстаграм">
-                    <img src="images/FB.svg" alt="Фейсбук">
+                    <a class="footer-inst" href="#"></a>
+                    <a class="footer-fb" href="#"></a>
                 </div>     
             </div>
             <div class="footer-text">
@@ -194,5 +196,33 @@
             </div>   
         </div>  
     </footer>
+    <div class="screen">
+        <div id="modal" class="modal">
+            <button class="modal-close" onclick="closeModal()"></button>
+            <h4 class="modal-title">Заявка на участие<br> «Марафон выносливости» </h4>
+            <p class="modal-text">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+            <div class="modal-form">
+                <input type="email" class="modal-email" placeholder="Ваш e-mail">
+                <input type="tel" class="modal-tel" placeholder="Ваш номер телефона">
+                <button class="modal-button" type="submit">Отправить</button>
+            </div>   
+        </div>
+    </div>
+    
+    <script>
+    // Modal
+
+        function openModal() {
+            document.getElementById("modal").style.left= "28%";
+            document.querySelector(".screen").style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.left = "100%";
+            document.querySelector(".screen").style.display = 'none'
+        }
+
+    </script>
+
 </body>
 </html>

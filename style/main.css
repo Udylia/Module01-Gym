@@ -57,17 +57,27 @@ body {
     display: flex;
     gap: 30px;
 }
-.social img {
+.social-inst {
+    background-image: url(../images/IN.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width:30px;
     height: 30px;
-    padding: 0;
-    cursor: pointer;
-    background-size: contain;
+    cursor: pointer; 
+    transition: .5s;
 }
-.social img:hover {
+.social-fb {
+    background-image: url(../images/FB.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:30px;
+    height: 30px;
+    cursor: pointer;  
+    transition: .3s;
+}
+.social-inst:hover, .social-fb:hover {
     width:38px;
     height:38px;
-    transition: .3s;
 }
 .wrapper {
     max-width: 1205px;
@@ -122,10 +132,12 @@ body {
     margin-left: 90px;
     cursor: pointer;
     box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
+    transition: .3s;
 }
 .content-link:hover {
     background-color: #2B3541;
     color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
 } 
 .visual img {
     width: 996px;
@@ -174,6 +186,7 @@ h3 {
     height: 100%;
     top: 0;
     left: 0;  
+    transition: .3s;
 }
 .event-flex-active {
     position: absolute;
@@ -189,6 +202,7 @@ h3 {
     left: 34px;
     top: 192px;
     opacity: 0;
+    transition: .3s;
 }
 .event-flex-cover:hover::after {
     background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
@@ -196,7 +210,6 @@ h3 {
 .event-flex-cover:hover .event-flex-active {
     z-index: 1;
     opacity: 1;
-    transition: 0.3s;
 }
 .event-flex-date {
     font-size: 18px;
@@ -229,6 +242,7 @@ h3 {
     position: absolute;
     right: 0;
     bottom: 0;
+    transition: .3s;
 }
 .event-flex-cover:hover .event-flex-link {
     opacity: 0;
@@ -421,6 +435,7 @@ h3 {
     letter-spacing: 1.2px;
     cursor: pointer;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
+    transition: .3s;
 }
 .mailing-form button:hover {
     background-color: #2B3541;
@@ -514,7 +529,7 @@ h3 {
 .company-text {
     font-size: 18px;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 150%; 
     margin-bottom: 35px;
 }
 .company-content button {
@@ -527,6 +542,12 @@ h3 {
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+    transition: .3s;
+}
+.company-content button:hover {
+    background-color: #2B3541;
+    color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
 }
 .company-flex {
     display: flex;
@@ -572,14 +593,19 @@ h3 {
     padding-top: 38px;
     padding-bottom: 7px;
 }
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+}
 .footer-logo {
     display: block;
     background-image: url(../images/logo.svg);
     width: 97px;
     height: 30px;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
 }
 .footer-nav {
     list-style-type: none;
@@ -633,13 +659,27 @@ h3 {
     display: flex;
     gap: 30px;
 }
-.footer-social img {
+.footer-inst {
+    background-image: url(../images/IN.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width:27px;
     height: 27px;
     padding: 0;
     cursor: pointer;
+    transition: .3s;
 }
-.footer-social img:hover {
+.footer-fb {
+    background-image: url(../images/FB.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:27px;
+    height: 27px;
+    padding: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.footer-inst:hover, .footer-fb:hover {
     width:38px;
     height:38px;
 }
@@ -660,5 +700,104 @@ h3 {
     color: #2B3541;
     opacity: 1;
 }
+.screen {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: none;
+}
+#modal {
+    max-width: 600px;
+    height: 577px;
+    background-color: #F3F3F3;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    transition: 0.5s;
+    box-sizing: border-box;   
+}
+.modal-close {
+    background-image: url(../images/close.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:20px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+}
+.modal-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 125%;
+    padding-top: 25px;
+    text-align: center;
+    position: relative;
+    margin-top: 37px;
+    margin-bottom: 19px;
+}
+.modal-title::before {
+    content: '';
+    width: 53px;
+    height: 53px;
+    border-radius: 100%;
+    background: #FBF138;
+    position: absolute;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, .3);
+    left: 123px;
+    bottom: 47px;
+    z-index: -1;
+}
+.modal-text {
+    font-size: 18px;
+    line-height: 150%;
+    padding: 0 129px;
+    margin: 0 auto;
+    text-align: center;
+}
+.modal-form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.modal-email, .modal-tel {
+    margin: 0 auto;
+    color: #2B3541;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 19px 19px;
+    border: none;
+    width: calc(100% - 100px);  
+}
+.modal-email::placeholder, .modal-tel::placeholder {
+    color: rgba(43, 53, 65, .3);
+    letter-spacing: 1.2px;
+}
+.modal-button {
+    border: 0;
+    color: #2B3541;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 19px 19px;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, .3);
+    transition: .3s;
+    width: 500px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    letter-spacing: 1.2px;
+}
+
+
 
  
