@@ -157,21 +157,21 @@ body {
     position: absolute;
     top: 903px;
     left: 389px;
-}
-.event-flex {
-    display: flex;
-    gap: 20px;
-}  
-.event {
-    margin-left: 389px;
-    margin-top: 401px;
+} 
+.event-container {
     color: #2B3541;
-}
+    max-width: 1141px;
+    margin: 0 auto;
+    margin-top: 401px;}
 h3 {
     font-size: 40px;
     font-weight: 700;
     line-height: 125%;
 }
+.event-flex {
+    display: flex;
+    gap: 20px;
+} 
 .event-flex-cover {
     position: relative;
     cursor: pointer;    
@@ -248,9 +248,9 @@ h3 {
 .event-flex-cover:hover .event-flex-link {
     opacity: 0;
 }
-.schedule {
+.schedule-container {
     max-width: 1143px;
-    margin-left: 390px;
+    margin: 0 auto;
     margin-top: 121px;
 }
 .schedule-title {
@@ -701,6 +701,9 @@ h3 {
     color: #2B3541;
     opacity: 1;
 }
+
+/*Modal*/
+
 .screen {
     content: '';
     background-color: rgba(0, 0, 0, 0.8);
@@ -798,6 +801,12 @@ h3 {
     margin: 20px auto;
     letter-spacing: 1.2px;
     cursor: pointer;
+}
+
+/*Responsive*/
+
+@media (min-width:766px) {
+
 }
 
 
