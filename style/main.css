@@ -156,8 +156,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 903px;
-    left: 389px;
+    top: 783px;
+    left: 32px;
+    transition: .3s;
 } 
 .event-container {
     color: #2B3541;
