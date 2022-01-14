@@ -372,7 +372,7 @@ h3 {
     background-color: #F3F3F3;
     height: 348px;
     width: 100%;
-    margin-bottom: 156px;
+    margin-bottom: 158px;
 }
 .mailing-box {
     margin: 0 auto;
@@ -516,12 +516,14 @@ h3 {
     margin: 0;
     padding-bottom: 3px;
 }
+.company-container {
+    margin: 0 auto;
+    max-width: 1142px;
+    padding: 0 15px;
+}
 .company-cover {
     display: flex;
     justify-content: center;
-    padding: 4px 30px 0;
-    margin: 0 auto;
-    max-width: 1142px;
     gap: 77px;
     margin-bottom: 56px;
 }
@@ -541,10 +543,10 @@ h3 {
     font-size: 18px;
     font-weight: 400;
     line-height: 150%; 
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 }
 .company-content button {
-    padding: 22px 52px;
+    padding: 23px 52px;
     background-color: #FBF138;
     box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
     font-size: 16px;
@@ -563,9 +565,6 @@ h3 {
 .company-flex {
     display: flex;
     justify-content: center;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 30px;
     gap: 67px;
     margin-bottom: 149px;
 }
