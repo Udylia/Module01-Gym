@@ -86,12 +86,16 @@ body {
     opacity: 1;
 }
 .wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+.wrapper-container {
     max-width: 1205px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding: 0 15px;
+    padding: 0 15px 240px;
 }
 .content {
     color: #2B3541;
@@ -168,7 +172,7 @@ body {
     color: #2B3541;
     max-width: 1141px;
     margin: 0 auto;
-    margin-top: 401px;
+    margin-top: 162px;
     padding: 0 15px;
 }
 h3 {
@@ -373,7 +377,7 @@ h3 {
 .mailing-container {
     margin-top: 157px;
     background-color: #F3F3F3;
-    height: 348px;
+    min-height: 348px;
     width: 100%;
     margin-bottom: 158px;
 }
