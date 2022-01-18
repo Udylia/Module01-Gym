@@ -183,18 +183,55 @@ h3 {
 .event-flex {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
-    max-width: 100%;
+    justify-content: space-around;
 } 
-.event-flex-cover {
+.event-flex-cover:first-child {
+    background-image: url(../images/maraphon.png);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;    
+    height: 594px; 
+    width: 366px;
+}
+.event-flex-cover:nth-child(2) {
+    background-image: url(../images/vebinar1.png);
+    background-size: cover;
     position: relative;
     cursor: pointer;    
     height: 600px; 
+    width: 366px;
 }
-.event-flex-item:first-child .event-flex-cover img {
-    height: 604px;
+.event-flex-cover:nth-child(3) {
+    background-image: url(../images/vebinar2.png);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;    
+    height: 600px; 
+    width: 366px;
 }
-.event-flex-cover::after {
+.event-flex-cover:first:after {
+    content: ''; 
+    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;  
+    transition: .3s;
+}
+.event-flex-cover:nth-child(2):after {
+    content: ''; 
+    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;  
+    transition: .3s;
+}
+.event-flex-cover:nth-child(3):after {
     content: ''; 
     background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
     display: block;
@@ -832,17 +869,41 @@ h3 {
 
 /*Responsive*/
 
-@media (max-width: 1505px) {
-    .event-flex-cover {
-        max-width: 341px;
+@media (max-width: 1490px) {
+    
+    .wrapper-container {
+        padding-bottom: 145px;
     }
-    .event-flex-cover img {
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
+    .visual img {
+        width: 855px;
+        right: 20px;
     }
+    .button-down {
+        top: 665px;
+    }
+    .content-title {
+        font-size: 42px;
+    }
+
 }
 
+@media (max-width: 1100px) {
 
-
- 
+    .wrapper-container {
+        padding-bottom: 0;
+    }
+    .visual img {
+        width: 650px;
+        right: 20px;
+    }
+    .button-down {
+        top: 498px;
+    }
+    .content-title {
+        font-size: 34px;
+        max-width: 460px;
+    }
+    .company-text {
+        font-size: 30px;
+    }
+}
