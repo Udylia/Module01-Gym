@@ -35,7 +35,7 @@
                         </ul>
                     </nav>
                     <div class="header-burger">
-                        <button class="burger-menu"></button>
+                        <button class="burger-menu" onclick="openModalMenu()"></button>
                     </div>
                 </div>
                 <div class="social">
@@ -46,8 +46,8 @@
         </div>
     </header>
     <main>
-        <div class="wrapper">
-            <div class="wrapper-container">
+        <div class="container">
+            <div class="wrapper">
                 <div class="content">
                     <h1 class="content-title">Онлайн тренировки любой сложности</h1>
                     <h2 class="content-text"> &gt; 15 <span>тренировок</span></h2>
@@ -65,7 +65,7 @@
         </div>
        
         <section class="event" id="event">
-            <div class="event-container">
+            <div class="container">
                 <h3>Ближайшие события</h3>
                 <div class="event-flex">
                     <div class="event-flex-cover">
@@ -93,7 +93,7 @@
             </div>   
         </section>
         <section id="scheduleDown" class="schedule">
-            <div class="schedule-container">
+            <div class="container">
                 <div class="schedule-title">
                     <h3>Расписание<br>тренировок</h3>
                     <span class="date">22 - 28 июня</span>
@@ -139,7 +139,7 @@
             </div>  
         </section>
         <section  class="mailing">
-            <div class="mailing-container">
+            <div class="container">
                 <h3 class="mailing-title">Подпишитесь на рассылку</h3>
                 <div class="mailing-box">
                     <div class="mailing-form">
@@ -154,7 +154,7 @@
             </div>
         </section>
         <section class="aboutcompany" id="aboutCompany">
-            <div class="company-container">
+            <div class="container">
                     <div class="company-cover">
                         <div class="company-content">
                             <h3 class="company-title">О компании</h3>
@@ -182,7 +182,6 @@
                         </div>
                         <div class="company-visual">
                             <img src="images/trainer.png" alt="Тренер">
-                            <div class="company-visual-bg"></div> 
                         </div>   
                     </div>  
                     <div class="company-flex">
@@ -208,34 +207,49 @@
         </section>
     </main>  
     <footer>
-        <div class="footer-container">
-            <div class="footer">
-                <div class="footer-menu">
-                    <a href="#" class="footer-logo"></a>
-                    <nav>
-                        <ul class="footer-nav">
-                            <li><a href="#event">Мероприятия</a></li>
-                            <li><a href="#scheduleDown">Расписание</a></li>
-                            <li><a href="#aboutCompany">О компании</a></li>
-                        </ul>
-                    </nav>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-flex">
+                    <div class="footer-menu">
+                        <a href="#" class="footer-logo"></a>
+                        <nav>
+                            <ul class="footer-nav">
+                                <li><a href="#event">Мероприятия</a></li>
+                                <li><a href="#scheduleDown">Расписание</a></li>
+                                <li><a href="#aboutCompany">О компании</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-mail">
+                            <a href="mailto:info@freefit.com">info@freefit.com</a>
+                        </div>
+                        <div class="footer-social">
+                            <a class="footer-inst" href="#"></a>
+                            <a class="footer-fb" href="#"></a>
+                        </div>
+                    </div>     
                 </div>
-                <div class="footer-contact">
-                    <div class="footer-mail">
-                        <a href="mailto:info@freefit.com">info@freefit.com</a>
-                    </div>
-                    <div class="footer-social">
-                        <a class="footer-inst" href="#"></a>
-                        <a class="footer-fb" href="#"></a>
-                    </div>
-                </div>     
+                <div class="footer-text">
+                    <p>© 2020, Все права защищены</p>
+                    <p>Сделано в рамках курса учебной платформы <a href="https://annblok.ru/workshop" target="_blank">Annblok</a></p>
+                </div>   
             </div>
-            <div class="footer-text">
-                <p>© 2020, Все права защищены</p>
-                <p>Сделано в рамках курса учебной платформы <a href="https://annblok.ru/workshop" target="_blank">Annblok</a></p>
-            </div>   
         </div>  
     </footer>
+    <div id="modalMenu" class="modalMenu">
+        <a href="#" class="header-logo"></a>
+        <ul class="header-nav">
+            <li><a href="#event">Мероприятия</a></li>
+            <li><a href="#scheduleDown">Расписание</a></li>
+            <li><a href="#aboutCompany">О компании</a></li>
+        </ul>
+        <div class="social">
+            <a class="social-inst" href="#"></a>
+            <a class="social-fb" href="#"></a>
+        </div>  
+        <button class="burger-close" onclick="closeModalMenu()"></button>
+    </div>
     <div class="screen">
         <div id="modal" class="modal">
             <button class="modal-close" onclick="closeModal()"></button>
@@ -251,6 +265,15 @@
     
     <script>
     // Modal
+
+
+        function openModalMenu() {
+            document.getElementById("modalMenu").style.top = "0px";
+        }
+
+        function closeModalMenu() {
+           document.getElementById("modalMenu").style.top = "-500px";
+        }
 
         function openModal() {
             document.getElementById("modal").style.left= "28%";
