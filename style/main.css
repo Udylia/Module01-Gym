@@ -1170,6 +1170,9 @@ h3 {
         font-size: 12px;
         padding: 7px 17px;
     }
+    .event-flex-active {
+        display: none;
+    }
     .event-mob {
         display: block;
         background-image: url(../images/add.svg);
@@ -1523,8 +1526,51 @@ h3 {
     }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 326px) {
 
+    .social-inst, .social-fb {
+        width: 23px;
+        height: 23px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .event-flex-title {
+        font-size: 10px;
+    }
+    .event-flex-cover:first-child, .event-flex-cover:nth-child(2) {
+        width: 42vw;
+    }
+    .event-flex-cover:nth-child(3) {
+        width: 90vw;
+    }
+    .event-mob {
+        width: 27px;
+        height: 27px;
+    }
+    .event-flex-link {
+        font-size: 10px;
+    }
+    .schedule-grid .schedule-grid-item:nth-child(2) {
+        height: 260px;
+    }
+    .schedule-grid-item:nth-child(2) .schedule-grid-title {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    .checkbox:checked + label, .checkbox:not(:checked) + label {
+        font-size: 9px;
+    }
+    .footer-nav {
+        gap: 10vw;
+    }
+    .footer-nav a{
+        font-size: 10px;
+    }
+    .footer-fb, .footer-inst {
+        width: 23px;
+        height: 23px;
+    }
 }
 
         
