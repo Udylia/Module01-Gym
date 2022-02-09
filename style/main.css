@@ -212,6 +212,7 @@ h3 {
     cursor: pointer;    
     height: 594px; 
     max-width: 366px;
+    width: 100%;
 }
 .event-flex-cover:nth-child(2) {
     background-image: url(../images/vebinar1.png);
@@ -221,6 +222,7 @@ h3 {
     cursor: pointer;    
     height: 600px;
     max-width: 366px;
+    width: 100%;
 }
 .event-flex-cover:nth-child(3) {
     background-image: url(../images/vebinar2.png);
@@ -230,6 +232,7 @@ h3 {
     cursor: pointer;    
     height: 600px; 
     max-width: 366px;
+    width: 100%;
 }
 .event-flex-cover:first-child::after {
     content: ''; 
