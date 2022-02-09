@@ -1489,7 +1489,13 @@ h3 {
         font-size: 16px; 
     }
     .schedule-grid-item:nth-child(2) .schedule-grid-title {
-        margin-top: 97px;
+        margin-top: 10px;
+        
+    }
+    .schedule-grid-item:nth-child(2) .schedule-grid-box {
+        position: absolute;
+        top: 90px;
+        left: 58px;
     }
     .schedule-grid-text {
         width: 235px;
