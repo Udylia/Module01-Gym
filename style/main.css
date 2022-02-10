@@ -209,8 +209,9 @@ h3 {
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
+    background-position: center;
     cursor: pointer;    
-    height: 594px; 
+    height: 600px; 
     max-width: 366px;
     width: 100%;
 }
@@ -219,6 +220,7 @@ h3 {
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
+    background-position: center;
     cursor: pointer;    
     height: 600px;
     max-width: 366px;
@@ -229,6 +231,7 @@ h3 {
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
+    background-position: center;
     cursor: pointer;    
     height: 600px; 
     max-width: 366px;
@@ -1007,6 +1010,9 @@ h3 {
         font-size: 40px;
         letter-spacing: 0;
     }
+    .content-text {
+        font-size: 35px;
+    }
     .content-text-two {
         font-size: 16px;
     }
@@ -1060,8 +1066,14 @@ h3 {
     .content-title {
         font-size: 32px;
     }
+    .content-text {
+        font-size: 28px;
+    }
     .visualimg {
         max-width: 650px;
+    }
+    .schedule-grid-text {
+        font-size: 14px;
     }
 }
 
@@ -1079,16 +1091,14 @@ h3 {
         right: 0;
     }
     .content-title {
-        font-size: 30px;
+        font-size: 29px;
+        width: 380px;
     }
     .content-block {
         margin-left: 60px;
     }
     .content-text {
         font-size: 20px;
-    }
-    .content-link {
-        font-size: 12px;
     }
     .content-text-two {
         font-size: 14px;
@@ -1147,12 +1157,9 @@ h3 {
     .content-text {
         font-size: 26px;
     }
-    .content-link {
-        font-size: 16px;
-    }
     .visual {
-        top: 54px;
-        max-width: 344px;
+        top: 11px;
+        max-width: 380px;
         gap: 13px;
     }
     .gradient-left {
@@ -1168,7 +1175,7 @@ h3 {
         display: block;
         max-width: 395px; 
         position: absolute;  
-        right: 0;
+        right: 10px;
         bottom: 0;
     }
     .button-down {
@@ -1291,12 +1298,16 @@ h3 {
     }
     .company-cover {
         margin-bottom: 39px;
+        gap: 2px;
     }
     .company-title {
         font-size: 26px;
     }
     .company-text {
         font-size: 16px;
+    }
+    .company-visual {
+        max-width: 373px;
     }
     .company-visual img {
         max-width: 373px;
@@ -1612,6 +1623,12 @@ h3 {
     .social-inst, .social-fb {
         width: 23px;
         height: 23px;
+    }
+    .content-title {
+        font-size: 22px;
+    }
+    .content-text {
+        font-size: 21px;
     }
     h3 {
         font-size: 20px;
