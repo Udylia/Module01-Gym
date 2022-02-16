@@ -900,8 +900,9 @@ h3 {
     height: 577px;
     background-color: #F3F3F3;
     position: fixed;
-    top: 20%;
-    left: 35%;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
     transition: 0.5s;
     box-sizing: border-box;   
 }
@@ -916,6 +917,7 @@ h3 {
     right: 30px;
     border: none;
     cursor: pointer;
+    z-index: 1;
 }
 .modal-title {
     font-size: 28px;
