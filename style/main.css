@@ -1058,12 +1058,6 @@ h3 {
     .footer-nav {
         gap: 3vw;
     }
-    .footer-mail a::before {
-        width: 2vw;
-        height: 2vw;
-        top: -1vw;
-        right: 11vw;
-    }
 }
 
 @media (max-width: 1150px) {
@@ -1146,6 +1140,15 @@ h3 {
     }
     .schedule-grid .schedule-grid-item:nth-child(5), .schedule-grid .schedule-grid-item:nth-child(6) {
         grid-row: 3/4;
+    }
+    .footer-nav a, .footer-mail a {
+        font-size: 12px;
+    }
+    .footer-mail a::before {
+        width: 20px;
+        height: 20px;
+        top: -9px;
+        right: 102px;
     }
 }
 
