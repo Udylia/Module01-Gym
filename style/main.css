@@ -1653,6 +1653,7 @@ h3 {
     }
     .content-title {
         font-size: 22px;
+        letter-spacing: 0;
     }
     .content-text {
         font-size: 21px;
