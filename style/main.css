@@ -1639,6 +1639,12 @@ h3 {
     }
 }
 
+@media (max-width: 359px) {
+    .content-title {
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 326px) {
 
     .social-inst, .social-fb {
