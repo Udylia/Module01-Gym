@@ -1132,6 +1132,9 @@ h3 {
         grid-template-rows: 332px 224px 224px;
         grid-auto-flow: row;
     }
+    .schedule-grid-item:nth-child(2) img {
+        margin-top: 65px;
+    }
     .schedule-grid .schedule-grid-item:nth-child(1), .schedule-grid .schedule-grid-item:nth-child(2) { 
         grid-row: 1/2;
     } 
