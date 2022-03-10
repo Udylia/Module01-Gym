@@ -902,7 +902,7 @@ h3 {
     height: 577px;
     background-color: #F3F3F3;
     position: fixed;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 30%);
     transition: 0.5s;
     box-sizing: border-box;   
 }
