@@ -534,6 +534,7 @@ h3 {
     cursor: pointer;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
     transition: .3s;
+    font-family: 'Montserrat', sans-serif;
 }
 .mailing-button:hover {
     background-color: #2B3541;
@@ -647,6 +648,7 @@ h3 {
     display: none;
 }
 .company-content button {
+    font-family: 'Montserrat', sans-serif;
     padding: 23px 52px;
     color: #2B3541;
     background-color: #FBF138;
@@ -900,9 +902,7 @@ h3 {
     height: 577px;
     background-color: #F3F3F3;
     position: fixed;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, 50%);
     transition: 0.5s;
     box-sizing: border-box;   
 }
@@ -1538,11 +1538,12 @@ h3 {
     .mailing {
         margin-top: 82px;
         margin-bottom: 77px;
+        padding-top: 3px;
     }
     .mailing-title {
         padding: 56px 0 0;
         max-width: 201px;
-        margin: 0 auto 51px;
+        margin: 0 auto;
     }
     .mailing h3::before {
         width: 31px;
@@ -1642,11 +1643,15 @@ h3 {
     }
 }
 
+@media (max-width: 360px) {
+    .event-flex-cover:first-child .event-mob {
+        bottom: 1px;   
+    }
+}
 @media (max-width: 359px) {
     .content-title {
         font-size: 22px;
     }
-}
 
 @media (max-width: 326px) {
 
